@@ -8,6 +8,7 @@ import {
   Patch,
   Post,
 } from '@nestjs/common';
+//new
 import { CreateBlogPostDto } from './dtos/createBlogPost.dto';
 import { UpdateBlogPostDto } from './dtos/updateBlogPost.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
@@ -16,7 +17,7 @@ import { BlogPostService } from './blog-post.service';
 @ApiTags('Blog Posts')
 @Controller('blog-post')
 export class BlogPostController {
-  constructor(private blogPostService: BlogPostService) { }
+  constructor(private blogPostService: BlogPostService) {}
 
   @ApiOperation({ summary: 'Get all posts' })
   @Get()
